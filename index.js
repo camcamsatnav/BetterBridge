@@ -23,10 +23,6 @@ function bridgeChat(bot, player, msg, event) {
     ChatLib.chat(combined);
 }
 
-const cl = new Changelog('UniversalBridge', '1.6.0', '&aMiscellaneous Changes and Bug Fixes')
-cl.writeChangelog({ changelog: "&b", name: "&e", version: "&e" })
-
-
 function addLinks(msg, event) { //adds the links and hoverables to the output string
     let newmsg = new TextComponent(msg.replace("&rhttp", "http"));
     new Message(event).getMessageParts().forEach(part => {
