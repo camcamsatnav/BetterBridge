@@ -1,3 +1,4 @@
+/// <reference types="../CTAutocomplete" />
 import Settings from "./settings";
 
 register("command", () => {
